@@ -144,6 +144,7 @@ export default function ContactForm() {
                 </span>
               </label>
               <input
+                id="email"
                 type="email"
                 value={email}
                 onChange={(e) => handleInputs(e, setEmail)}
