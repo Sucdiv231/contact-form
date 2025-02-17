@@ -80,7 +80,7 @@ export default function ContactForm() {
   return (
     <>
       {!readyToSubmit && (
-        <div className="bg-white w-full lg:w-1/2 text-green-900 p-6 rounded-xl shadow-lg">
+        <div className="bg-white w-full lg:w-1/2 text-gray-600 p-6 rounded-xl shadow-lg">
           <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 lg:mb-10">
             Contact Us
           </h1>
@@ -91,7 +91,7 @@ export default function ContactForm() {
                   First Name{" "}
                   <span
                     className={`${
-                      isFirstName === true ? "text-red-500" : "text-green-600"
+                      isFirstName === true ? "text-red-500" : "text-gray-600"
                     }`}
                   >
                     *
@@ -113,7 +113,7 @@ export default function ContactForm() {
                   Last Name{" "}
                   <span
                     className={`${
-                      isLastName === true ? "text-red-500" : "text-green-600"
+                      isLastName === true ? "text-red-500" : "text-gray-600"
                     }`}
                   >
                     *
@@ -137,7 +137,7 @@ export default function ContactForm() {
                 Email Address
                 <span
                   className={`${
-                    isEmail === true ? "text-red-500" : "text-green-600"
+                    isEmail === true ? "text-red-500" : "text-gray-600"
                   }`}
                 >
                   *
@@ -159,7 +159,7 @@ export default function ContactForm() {
                 Query Type
                 <span
                   className={`${
-                    isQuery === true ? "text-red-500" : "text-green-600"
+                    isQuery === true ? "text-red-500" : "text-gray-600"
                   }`}
                 >
                   *
@@ -220,7 +220,7 @@ export default function ContactForm() {
                 Message{" "}
                 <span
                   className={`${
-                    isMessage === true ? "text-red-500" : "text-green-600"
+                    isMessage === true ? "text-red-500" : "text-gray-600"
                   }`}
                 >
                   *
@@ -251,7 +251,7 @@ export default function ContactForm() {
                 I consent to being contacted by the team{" "}
                 <span
                   className={`${
-                    isConsent === true ? "text-red-500" : "text-green-600"
+                    isConsent === true ? "text-red-500" : "text-gray-600"
                   }`}
                 >
                   *
@@ -268,7 +268,7 @@ export default function ContactForm() {
       )}
 
       {readyToSubmit && (
-        <div className="bg-white p-6 text-green-600 font-[600] h-auto">
+        <div className="bg-white p-6 text-gray-600 font-[600] h-auto">
           <p className="">Successfully Submitted!!!</p>
         </div>
       )}
