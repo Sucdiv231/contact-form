@@ -78,7 +78,7 @@ export default function ContactForm() {
   }
 
   return (
-    <main>
+    <>
       {!readyToSubmit && (
         <div className="bg-white w-full lg:w-1/2 text-green-900 p-6 rounded-xl shadow-lg">
           <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 lg:mb-10">
@@ -248,7 +248,14 @@ export default function ContactForm() {
                     />
                   )}
                 </div>
-                I consent to being contacted by the team
+                I consent to being contacted by the team{" "}
+                <span
+                  className={`${
+                    isConsent === true ? "text-red-500" : "text-green-600"
+                  }`}
+                >
+                  *
+                </span>
               </div>
               <p className="text-red-500">{errormessage}</p>
             </div>
@@ -265,6 +272,6 @@ export default function ContactForm() {
           <p className="">Successfully Submitted!!!</p>
         </div>
       )}
-    </main>
+    </>
   );
 }
