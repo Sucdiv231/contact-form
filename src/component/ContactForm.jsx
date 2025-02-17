@@ -239,11 +239,7 @@ export default function ContactForm() {
             {/* Consent check*/}
 
             <div onClick={() => setiSConsent((prev) => !prev)}>
-              <div
-                id="GeneralEnquiry"
-                type="text"
-                className="flex items-center gap-2  w-full rounded-xl"
-              >
+              <div className="flex items-center gap-2  w-full rounded-xl">
                 <div className="w-4 h-4 rounded-sm border border-green-600">
                   {isConsent && (
                     <img
